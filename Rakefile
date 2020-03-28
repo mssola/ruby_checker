@@ -18,6 +18,7 @@
 # along with ruby_checker.  If not, see <http://www.gnu.org/licenses/>.
 
 require "rake/testtask"
+require "rubocop/rake_task"
 
 Rake::TestTask.new(:test) do |t|
   t.libs << "test"
@@ -25,4 +26,9 @@ Rake::TestTask.new(:test) do |t|
   t.test_files = FileList["test/**/test_*.rb"]
 end
 
-task default: :test
+RuboCop::RakeTask.new(:rubocop) do |t|
+  t.options = ["--display-cop-names"]
+end
+
+task default: :all
+task all: %i[test rubocop]
