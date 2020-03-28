@@ -7,6 +7,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     ast (2.4.0)
+    git_validation_task (1.0.0)
     jaro_winkler (1.5.4)
     jaro_winkler (1.5.4-java)
     minitest (5.14.0)
@@ -35,6 +36,7 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (~> 2.1.4)
+  git_validation_task (~> 1.0.0)
   minitest (~> 5.14.0)
   rake (~> 13.0.1)
   rubocop (~> 0.80.1)

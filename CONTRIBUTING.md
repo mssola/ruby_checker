@@ -29,6 +29,12 @@ check the style of the Ruby code. So, in order to check the style just run:
 $ bundle exec rubocop
 ```
 
+And you can also run it like this:
+
+```bash
+$ rake rubocop
+```
+
 ### Git validation
 
 In order to ensure that the git log is as maintainable as possible, the
@@ -53,7 +59,7 @@ task this doesn't interrupt it.
 
 I'm using [Github](https://github.com/mssola/ruby_checker) in order to host the
 code. Thus, in order to report issues you can do it on its [issue
-tracker](https://github.com/mssola/writer-mode/issues). A couple of notes on
+tracker](https://github.com/mssola/ruby_checker/issues). A couple of notes on
 reports:
 
 - Check that the issue has not already been reported or fixed in `master`.

@@ -17,6 +17,7 @@
 # You should have received a copy of the GNU Lesser General Public License
 # along with ruby_checker.  If not, see <http://www.gnu.org/licenses/>.
 
+require "git_validation/task"
 require "rake/testtask"
 require "rubocop/rake_task"
 
@@ -30,5 +31,9 @@ RuboCop::RakeTask.new(:rubocop) do |t|
   t.options = ["--display-cop-names"]
 end
 
+GitValidation::Task.new(:"git-validation") do |t|
+  t.from = "74a6c20fc4d3"
+end
+
 task default: :all
-task all: %i[test rubocop]
+task all: %i[test rubocop git-validation]
