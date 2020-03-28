@@ -33,6 +33,7 @@ end
 
 GitValidation::Task.new(:"git-validation") do |t|
   t.from = "74a6c20fc4d3"
+  t.quiet = ENV["CI"] != "true"
 end
 
 task default: :all

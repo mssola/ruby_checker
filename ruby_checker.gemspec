@@ -23,7 +23,7 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version = ">= 2.3"
 
   spec.add_development_dependency "bundler", "~> 2.1.4"
-  spec.add_development_dependency "git_validation_task", "~> 1.0.0"
+  spec.add_development_dependency "git_validation_task", "~> 1.1.0"
   spec.add_development_dependency "minitest", "~> 5.14.0"
   spec.add_development_dependency "rake", "~> 13.0.1"
   spec.add_development_dependency "rubocop", "~> 0.80.1"
