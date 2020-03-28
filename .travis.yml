@@ -1,0 +1,22 @@
+language: ruby
+cache: bundler
+sudo: false
+
+rvm:
+  - 2.3
+  - 2.4
+  - 2.5
+  - 2.6
+  - 2.7
+  - ruby-head
+  - jruby
+  - mruby
+  - truffleruby
+
+before_install:
+  - gem install bundler
+
+script:
+  - rake
+  - bundle exec rubocop -V
+  - bundle exec rubocop -F

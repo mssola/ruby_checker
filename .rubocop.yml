@@ -1,0 +1,52 @@
+require: rubocop-minitest
+
+AllCops:
+  TargetRubyVersion: 2.3
+  DisplayCopNames: true
+  DisplayStyleGuide: false
+
+# This is a remnant of old SUSE-style alignment for hashes, The table format
+# looks more human readable.
+Layout/HashAlignment:
+  EnforcedHashRocketStyle: table
+  EnforcedColonStyle: table
+
+# The default is just too small. A limit of 100 looks reasonable and many other
+# projects (including inside of SUSE) are also using this value.
+Layout/LineLength:
+  Max: 100
+
+# Both my last names contain non-ascii characters :) (license notice)
+Style/AsciiComments:
+  Enabled: false
+
+# Disable the block length cop for tests.
+Metrics/BlockLength:
+  Enabled: true
+  Exclude:
+    - spec/**/*
+
+Metrics/MethodLength:
+  Max: 20
+
+# This is a common SUSE configuration value: the performance difference between
+# single and double quotes is no longer there, and so it's better to be
+# consistent and force only double quotes.
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+# Same as Style/StringLiterals.
+Style/StringLiteralsInInterpolation:
+  EnforcedStyle: double_quotes
+
+##
+# Newly added cops
+
+Style/HashEachMethods:
+  Enabled: true
+
+Style/HashTransformKeys:
+  Enabled: true
+
+Style/HashTransformValues:
+  Enabled: true
