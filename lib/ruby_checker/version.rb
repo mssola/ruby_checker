@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# Copyright (C) 2020 Miquel Sabaté Solà <msabate@suse.com>
+# Copyright (C) 2020 Miquel Sabaté Solà <mikisabate@gmail.com>
 #
 # This file is part of ruby_checker
 #

@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.name          = "ruby_checker"
   spec.version       = RubyChecker::VERSION
   spec.authors       = ["mssola"]
-  spec.email         = ["mssola@suse.com"]
+  spec.email         = ["mikisabate@gmail.com"]
   spec.description   = "Ruby interpreter and version checker."
   spec.summary       = "Allows developers to check for a specific required ruby version."
   spec.homepage      = "https://github.com/mssola/ruby_checker"
