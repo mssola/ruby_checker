@@ -14,5 +14,13 @@ rvm:
 before_install:
   - gem install bundler
 
+install:
+  # Install gem dependencies
+  - bundle
+
+  # Install git-validation
+  - eval "$(curl -sL https://raw.githubusercontent.com/travis-ci/gimme/master/gimme | GIMME_GO_VERSION=1.10.2 bash)"
+  - go get -u github.com/vbatts/git-validation
+
 script:
   - rake
