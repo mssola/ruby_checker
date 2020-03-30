@@ -10,4 +10,4 @@ this by checking the relevant checkboxes):
 - [ ] You've updated the [changelog](../CHANGELOG.md).
 - [ ] You've updated the [readme](../README.md) (if relevant).
 
-Thanks for contributing to writer-mode!
+Thanks for contributing to ruby_checker!
