@@ -31,5 +31,14 @@ module RubyChecker
         puts "[ruby_checker] Warning: #{msg}"
       end
     end
+
+    # debug logs the given message as a debug message.
+    def debug(msg)
+      if defined?(Rails)
+        Rails.logger.tagged("ruby_checker") { Rails.logger.debug(msg) }
+      else
+        puts "[ruby_checker] Debug: #{msg}"
+      end
+    end
   end
 end

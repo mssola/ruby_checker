@@ -19,6 +19,7 @@
 
 require "ruby_checker/errors"
 require "ruby_checker/interpreter"
+require "ruby_checker/logger"
 require "ruby_checker/versions"
 
 require "rubygems/version"
@@ -37,7 +38,9 @@ module RubyChecker
       @supported = parsed_supported_version
       raise MissingSupportedVersionError if @supported.nil?
 
-      perform_checks!
+      res = perform_checks!
+      Logger.new.debug "OK!" if res
+      res
     end
 
     protected

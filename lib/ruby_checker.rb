@@ -22,3 +22,4 @@ module RubyChecker
 end
 
 require "ruby_checker/ruby_checker"
+require "ruby_checker/railtie" if defined?(Rails)

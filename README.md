@@ -36,6 +36,17 @@ If you are using this gem from within a Ruby on Rails project, you will notice t
   since it will be guessed from the `.ruby-version` file from the root of your
   project.
 
+Moreover, this gem also implements a railtie with an initializer. This means
+that if you require this gem on your Gemfile, you won't have to write any code
+in order to get this gem up and running. That is if you are on this situation:
+you have a `.ruby-version` file and you are using
+[MRI](https://en.wikipedia.org/wiki/Ruby_MRI). If you are using another
+interpreter you can write in your `config/application.rb` the following:
+
+```ruby
+config.ruby_checker.interpreter = ::RubyChecker::JRUBY  # or any other interpreter, even ANY.
+```
+
 ## Contributing
 
 Read the [CONTRIBUTING.md](./CONTRIBUTING.md) file.

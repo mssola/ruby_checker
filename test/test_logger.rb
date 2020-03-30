@@ -30,4 +30,9 @@ class TestLogger < Minitest::Test
     out = capture_output { @logger.warn "message" }
     assert_equal out, "[ruby_checker] Warning: message"
   end
+
+  def test_debug_without_rails
+    out = capture_output { @logger.debug "message" }
+    assert_equal out, "[ruby_checker] Debug: message"
+  end
 end
