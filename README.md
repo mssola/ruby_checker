@@ -1,4 +1,10 @@
-# ruby_checker [![Build Status](https://travis-ci.org/mssola/ruby_checker.svg?branch=master)](https://travis-ci.org/mssola/ruby_checker) [![Gem Version](https://badge.fury.io/rb/ruby_checker.svg)](https://badge.fury.io/rb/ruby_checker)
+<p align="center">
+  <a href="https://travis-ci.org/mssola/ruby_checker" title="Travis CI status for the master branch"><img src="https://travis-ci.org/mssola/ruby_checker.svg?branch=master" alt="Build Status for master branch" /></a>
+  <a href="https://badge.fury.io/rb/ruby_checker" title="Gem version"><img src="https://badge.fury.io/rb/ruby_checker.svg" alt="Gem version" /></a>
+  <a href="http://www.gnu.org/licenses/lgpl-3.0.txt" rel="nofollow"><img alt="License LGPL 3" src="https://img.shields.io/badge/license-LGPL_3-blue.svg" style="max-width:100%;"></a>
+</p>
+
+---
 
 `ruby_checker` provides a simple framework to enforce a specific ruby version and interpreter to be used. This is useful for projects that want to support only a sigle ruby version/interpreter.
 
